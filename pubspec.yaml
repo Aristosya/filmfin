@@ -37,16 +37,18 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 
-#  redirect to any url, or mobile application (tel: email: and e.t.c)
+# redirect to any url, or mobile application (tel: email: and e.t.c)
   url_launcher: ^6.1.5
-#  working with text localization
+# working with text localization
   intl: ^0.17.0
 #  theme for application
   adaptive_theme: ^3.1.0
 # compare 2 objects of same class by parameters
   equatable: ^2.0.3
-#  Functional programming in Dart
+# Functional programming in Dart
   dartz: ^0.10.1
+# A composable, Future-based library for making HTTP requests.
+  http: ^0.13.4
 
 dev_dependencies:
   flutter_test:
