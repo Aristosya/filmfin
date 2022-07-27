@@ -49,6 +49,10 @@ dependencies:
   dartz: ^0.10.1
 # A composable, Future-based library for making HTTP requests.
   http: ^0.13.4
+# Storage for simple data
+  shared_preferences: ^2.0.15
+# Internet connection check
+  internet_connection_checker: ^0.0.1+4
 
 dev_dependencies:
   flutter_test:
