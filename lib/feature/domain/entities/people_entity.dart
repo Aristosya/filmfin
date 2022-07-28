@@ -2,6 +2,7 @@ import 'package:equatable/equatable.dart';
 
 class PeopleEntity extends Equatable {
   final String? name;
+
   final int? height;
   final int? mass;
   final String? hair_color;
@@ -33,5 +34,20 @@ class PeopleEntity extends Equatable {
       required this.url});
 
   @override
-  List<Object?> get props => [name,height,mass,hair_color,skin_color,eye_color,birth_year,gender,homeworld_url,films,vehicles,starships,created,url];
+  List<Object?> get props => [
+        name,
+        height,
+        mass,
+        hair_color,
+        skin_color,
+        eye_color,
+        birth_year,
+        gender,
+        homeworld_url,
+        films,
+        vehicles,
+        starships,
+        created,
+        url
+      ];
 }
