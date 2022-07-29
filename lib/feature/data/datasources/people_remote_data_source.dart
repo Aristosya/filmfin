@@ -28,7 +28,8 @@ class PeopleRemoteDataSourceImpl implements PeopleRemoteDataSource{
     final response = await client.get(Uri.parse(url), headers: {'Content-Type': 'application/json'});
     if (response.statusCode==200) {
       final people = json.decode(response.body);
-      return (people['results'] as List).map((character) => PeopleModel.fromJson(character)).toList();
+      var modelPeople = (people['results'] as List).map((character) => PeopleModel.fromJson(character)).toList();
+      return modelPeople;
     } else {
       throw ServerException();
     }

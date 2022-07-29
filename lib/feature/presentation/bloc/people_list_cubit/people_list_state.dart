@@ -8,7 +8,6 @@ abstract class PeopleState extends Equatable {
   @override
   List<Object> get props => [];
 }
-
 class PeopleEmpty extends PeopleState {
   @override
   List<Object> get props => [];
