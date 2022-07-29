@@ -17,7 +17,7 @@ class PeopleRemoteDataSourceImpl implements PeopleRemoteDataSource{
   PeopleRemoteDataSourceImpl({required this.client});
 
   @override
-  Future<List<PeopleModel>> getAllPeople(int page) => _getPersonFromUrl('https://swapi.dev/api/people/?page=$page');
+  Future<List<PeopleModel>> getAllPeople(int page) => _getPersonFromUrl('https://swapi.dev/api/people/?page=$page&format=json');
 
   @override
   Future<List<PeopleModel>> searchPeople(String query) => _getPersonFromUrl('https://swapi.dev/api/people/?search=$query');
@@ -28,7 +28,7 @@ class PeopleRemoteDataSourceImpl implements PeopleRemoteDataSource{
     final response = await client.get(Uri.parse(url), headers: {'Content-Type': 'application/json'});
     if (response.statusCode==200) {
       final people = json.decode(response.body);
-      return (people as List).map((character) => PeopleModel.fromJson(character)).toList();
+      return (people['results'] as List).map((character) => PeopleModel.fromJson(character)).toList();
     } else {
       throw ServerException();
     }

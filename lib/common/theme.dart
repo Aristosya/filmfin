@@ -5,6 +5,7 @@ final darkTheme = ThemeData.dark().copyWith(
     color: Colors.black26
   ),
     primaryColor: Colors.white,
+    dividerColor: Colors.grey.shade50,
 );
 
 final lightTheme = ThemeData.light().copyWith(
@@ -12,4 +13,5 @@ final lightTheme = ThemeData.light().copyWith(
     color: Colors.white60
   ),
   primaryColor: Colors.black,
+  dividerColor: Colors.grey,
 );
