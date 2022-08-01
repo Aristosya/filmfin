@@ -32,7 +32,7 @@ class PeopleListCubit extends Cubit<PeopleState> {
     failureOrPerson.fold(
             (error) => emit(PeopleError(message: _mapFailureToMessage(error))),
             (character) {
-          page++;
+              if (page<10){page++;}
           final people = (state as PeopleLoading).oldPeopleList;
           people.addAll(character);
           // print('List length: ${people.length.toString()}');

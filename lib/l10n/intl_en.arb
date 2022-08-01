@@ -1,8 +1,19 @@
 {
   "home_page_title": "Characters",
+  "people_detail_view_page_title": "More information",
   "gender" : "Gender: ",
   "birth_year" : "Birth year: ",
   "height" : "Height: ",
   "created" : "Created year: ",
+  "hair_color" : "Hair color: ",
+  "mass" : "Mass: ",
+  "skin_color" : "Skin color: ",
+  "eye_color" : "Eye color: ",
+  "films" : "Films: ",
+  "vehicles" : "Vehicles: ",
+  "starships" : "Starships: ",
+  "url" : "Url: ",
+  "api_info" : "API information: ",
+  "search_character" : "Seacrh character: ",
   "" : ""
 }
