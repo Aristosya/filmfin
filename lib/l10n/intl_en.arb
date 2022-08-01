@@ -1,3 +1,8 @@
 {
-  "app_bar": "title"
+  "home_page_title": "Characters",
+  "gender" : "Gender: ",
+  "birth_year" : "Birth year: ",
+  "height" : "Height: ",
+  "created" : "Created year: ",
+  "" : ""
 }

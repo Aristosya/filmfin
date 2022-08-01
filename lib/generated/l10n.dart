@@ -50,15 +50,57 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `title`
-  String get app_bar {
+  /// `Characters`
+  String get home_page_title {
     return Intl.message(
-      'title',
-      name: 'app_bar',
+      'Characters',
+      name: 'home_page_title',
       desc: '',
       args: [],
     );
   }
+
+  /// `Gender: `
+  String get gender {
+    return Intl.message(
+      'Gender: ',
+      name: 'gender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Birth year: `
+  String get birth_year {
+    return Intl.message(
+      'Birth year: ',
+      name: 'birth_year',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Height: `
+  String get height {
+    return Intl.message(
+      'Height: ',
+      name: 'height',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Created year: `
+  String get created {
+    return Intl.message(
+      'Created year: ',
+      name: 'created',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the '' key
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
