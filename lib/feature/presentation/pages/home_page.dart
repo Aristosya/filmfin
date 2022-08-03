@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(S.of(context).home_page_title),
         actions: [
-          IconButton(onPressed: () { showSearch(context: context, delegate: CustomSearchDelegate(context),);},
+          IconButton(onPressed: () { showSearch(context: context, delegate: CustomSearchDelegate(context: context),);},
               icon: Icon(Icons.search))
         ],
       ),

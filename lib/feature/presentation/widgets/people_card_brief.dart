@@ -34,6 +34,8 @@ class PeopleCardBrief extends StatelessWidget {
           ],
         ),
       ),
+
     );
   }
 }
+
