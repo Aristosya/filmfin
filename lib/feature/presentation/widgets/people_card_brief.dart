@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/feature/domain/entities/people_entity.dart';
 
 import '../../../generated/l10n.dart';
+import '../pages/error_page.dart';
+import '../pages/people_detail_view.dart';
 
 class PeopleCardBrief extends StatelessWidget {
   final PeopleEntity character;
@@ -11,7 +13,7 @@ class PeopleCardBrief extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => {},
+      onTap: () => {Navigator.of(context).pushNamed(PeopleDetailViewPage.routeName, arguments : {'character': character},)},
       child: Ink(
         color: ((){
           if (index%2 == 0){return Theme.of(context).cardColor;}

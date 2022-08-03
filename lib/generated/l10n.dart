@@ -60,6 +60,16 @@ class S {
     );
   }
 
+  /// `More information`
+  String get people_detail_view_page_title {
+    return Intl.message(
+      'More information',
+      name: 'people_detail_view_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Gender: `
   String get gender {
     return Intl.message(
@@ -95,6 +105,106 @@ class S {
     return Intl.message(
       'Created year: ',
       name: 'created',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hair color: `
+  String get hair_color {
+    return Intl.message(
+      'Hair color: ',
+      name: 'hair_color',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mass: `
+  String get mass {
+    return Intl.message(
+      'Mass: ',
+      name: 'mass',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skin color: `
+  String get skin_color {
+    return Intl.message(
+      'Skin color: ',
+      name: 'skin_color',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eye color: `
+  String get eye_color {
+    return Intl.message(
+      'Eye color: ',
+      name: 'eye_color',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Films: `
+  String get films {
+    return Intl.message(
+      'Films: ',
+      name: 'films',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vehicles: `
+  String get vehicles {
+    return Intl.message(
+      'Vehicles: ',
+      name: 'vehicles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Starships: `
+  String get starships {
+    return Intl.message(
+      'Starships: ',
+      name: 'starships',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Url: `
+  String get url {
+    return Intl.message(
+      'Url: ',
+      name: 'url',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `API information: `
+  String get api_info {
+    return Intl.message(
+      'API information: ',
+      name: 'api_info',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Seacrh character: `
+  String get search_character {
+    return Intl.message(
+      'Seacrh character: ',
+      name: 'search_character',
       desc: '',
       args: [],
     );

@@ -22,10 +22,23 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "api_info": MessageLookupByLibrary.simpleMessage("API information: "),
         "birth_year": MessageLookupByLibrary.simpleMessage("Birth year: "),
         "created": MessageLookupByLibrary.simpleMessage("Created year: "),
+        "eye_color": MessageLookupByLibrary.simpleMessage("Eye color: "),
+        "films": MessageLookupByLibrary.simpleMessage("Films: "),
         "gender": MessageLookupByLibrary.simpleMessage("Gender: "),
+        "hair_color": MessageLookupByLibrary.simpleMessage("Hair color: "),
         "height": MessageLookupByLibrary.simpleMessage("Height: "),
-        "home_page_title": MessageLookupByLibrary.simpleMessage("Characters")
+        "home_page_title": MessageLookupByLibrary.simpleMessage("Characters"),
+        "mass": MessageLookupByLibrary.simpleMessage("Mass: "),
+        "people_detail_view_page_title":
+            MessageLookupByLibrary.simpleMessage("More information"),
+        "search_character":
+            MessageLookupByLibrary.simpleMessage("Seacrh character: "),
+        "skin_color": MessageLookupByLibrary.simpleMessage("Skin color: "),
+        "starships": MessageLookupByLibrary.simpleMessage("Starships: "),
+        "url": MessageLookupByLibrary.simpleMessage("Url: "),
+        "vehicles": MessageLookupByLibrary.simpleMessage("Vehicles: ")
       };
 }
