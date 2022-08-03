@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/common/styles.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../generated/l10n.dart';
+import '../../domain/entities/people_entity.dart';
+import '../bloc/search_bloc/search_bloc.dart';
+import '../bloc/search_bloc/search_event.dart';
+import '../bloc/search_bloc/search_state.dart';
+import 'search_result.dart';
 
 class CustomSearchDelegate extends SearchDelegate {
-  CustomSearchDelegate(BuildContext context)
+  final context;
+  CustomSearchDelegate({required this.context})
       : super(searchFieldLabel: S.of(context).search_character);
 
   final suggestions = [
@@ -36,7 +43,53 @@ class CustomSearchDelegate extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    return SizedBox();
+    print('search delegate query is $query');
+
+
+    BlocProvider.of<PeopleSearchBloc>(context, listen: false).add(PeopleSearch(query));
+
+    return BlocBuilder<PeopleSearchBloc, PeopleSearchState>(
+      builder: (context, state) {
+        if (state is PeopleSearchLoading) {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        } else if (state is PeopleSearchLoaded) {
+          final people = state.people;
+          if (people.isEmpty) {
+            return _showErrorText('No Characters with that name found');
+          }
+          return ListView.builder(
+            itemCount: people.isNotEmpty ? people.length : 0,
+            itemBuilder: (context, int index) {
+              PeopleEntity result = people[index];
+              return SearchResult(peopleResult: result);
+            },
+          );
+        } else if (state is PeopleSearchError) {
+          return _showErrorText(state.message);
+        } else {
+          return const Center(
+            child: Icon(Icons.now_wallpaper),
+          );
+        }
+      },
+    );
+  }
+
+  Widget _showErrorText(String errorMessage) {
+    return Container(
+      color: Colors.black,
+      child: Center(
+        child: Text(
+          errorMessage,
+          style: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
   }
 
   @override

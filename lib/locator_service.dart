@@ -9,6 +9,7 @@ import 'package:untitled/feature/domain/repositories/people_repository.dart';
 import 'package:untitled/feature/domain/usecases/get_all_people.dart';
 import 'package:untitled/feature/domain/usecases/search_people.dart';
 import 'package:http/http.dart' as http;
+import 'package:untitled/feature/presentation/bloc/search_bloc/search_bloc.dart';
 import 'feature/presentation/bloc/people_list_cubit/people_list_cubit.dart';
 
 final sl = GetIt.instance;
@@ -16,6 +17,7 @@ final sl = GetIt.instance;
 Future<void> init() async{
   // bloc
   sl.registerFactory(() => PeopleListCubit(getAllPeople: sl()));
+  sl.registerFactory(() =>PeopleSearchBloc(searchPeople: sl()));
   //usecases
   sl.registerLazySingleton(() => GetAllPeople(sl()));
   sl.registerLazySingleton(() => SearchPeople(sl()));
