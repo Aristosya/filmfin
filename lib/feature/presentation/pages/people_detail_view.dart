@@ -16,7 +16,7 @@ class PeopleDetailViewPage extends StatelessWidget {
     final character = args['character'];
 
     return Scaffold(
-      appBar: AppBar(title: Text('${S.of(context).people_detail_view_page_title}')),
+      appBar: AppBar(title: Text('${S.of(context).detail_view_page_title}')),
       body: Padding(
         padding: EdgeInsets.all(8.0),
         child: Row(

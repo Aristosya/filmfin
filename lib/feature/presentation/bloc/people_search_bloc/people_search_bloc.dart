@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:untitled/feature/presentation/bloc/search_bloc/search_event.dart';
-import 'package:untitled/feature/presentation/bloc/search_bloc/search_state.dart';
+import 'package:untitled/feature/presentation/bloc/people_search_bloc/people_search_event.dart';
+import 'package:untitled/feature/presentation/bloc/people_search_bloc/people_search_state.dart';
 
 import '../../../../core/error/failure.dart';
 import '../../../domain/usecases/search_people.dart';
@@ -11,7 +11,6 @@ import '../../../domain/usecases/search_people.dart';
 const SERVER_FAILURE_MESSAGE = 'Server Failure';
 const CACHED_FAILURE_MESSAGE = 'Cache Failure';
 
-// BLoC 8.0.0
 class PeopleSearchBloc extends Bloc<PeopleSearchEvent, PeopleSearchState> {
   final SearchPeople searchPeople;
 

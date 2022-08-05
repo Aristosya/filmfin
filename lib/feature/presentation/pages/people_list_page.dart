@@ -2,14 +2,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../generated/l10n.dart';
-import '../widgets/custom_search_delegate.dart';
+import '../widgets/app_bar.dart';
+import '../widgets/search_delegates.dart';
 import '../widgets/people_list_widget.dart';
 
 
 
 
-class HomePage extends StatelessWidget {
-  const HomePage({
+class PeopleListPage extends StatelessWidget {
+  const PeopleListPage({
     Key? key,
   }) : super(key: key);
 
@@ -18,13 +19,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(S.of(context).home_page_title),
-        actions: [
-          IconButton(onPressed: () { showSearch(context: context, delegate: CustomSearchDelegate(context: context),);},
-              icon: Icon(Icons.search))
-        ],
-      ),
+      appBar: AppBars().characters(title: '${S.of(context).people_list_page_title}', context: context),
+
       body: PeopleList(),
       backgroundColor: Theme.of(context).backgroundColor,
     );

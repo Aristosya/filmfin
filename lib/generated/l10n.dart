@@ -51,20 +51,30 @@ class S {
   }
 
   /// `Characters`
-  String get home_page_title {
+  String get people_list_page_title {
     return Intl.message(
       'Characters',
-      name: 'home_page_title',
+      name: 'people_list_page_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Films`
+  String get films_list_page_title {
+    return Intl.message(
+      'Films',
+      name: 'films_list_page_title',
       desc: '',
       args: [],
     );
   }
 
   /// `More information`
-  String get people_detail_view_page_title {
+  String get detail_view_page_title {
     return Intl.message(
       'More information',
-      name: 'people_detail_view_page_title',
+      name: 'detail_view_page_title',
       desc: '',
       args: [],
     );
@@ -200,11 +210,81 @@ class S {
     );
   }
 
-  /// `Seacrh character: `
+  /// `Search character: `
   String get search_character {
     return Intl.message(
-      'Seacrh character: ',
+      'Search character: ',
       name: 'search_character',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Title: `
+  String get title {
+    return Intl.message(
+      'Title: ',
+      name: 'title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Episode ID: `
+  String get episode_id {
+    return Intl.message(
+      'Episode ID: ',
+      name: 'episode_id',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Opening crawl: `
+  String get opening_crawl {
+    return Intl.message(
+      'Opening crawl: ',
+      name: 'opening_crawl',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Release date: `
+  String get release_date {
+    return Intl.message(
+      'Release date: ',
+      name: 'release_date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Director: `
+  String get director {
+    return Intl.message(
+      'Director: ',
+      name: 'director',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Producer: `
+  String get producer {
+    return Intl.message(
+      'Producer: ',
+      name: 'producer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search film: `
+  String get search_film {
+    return Intl.message(
+      'Search film: ',
+      name: 'search_film',
       desc: '',
       args: [],
     );

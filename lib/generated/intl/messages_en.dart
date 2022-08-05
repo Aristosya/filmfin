@@ -25,19 +25,29 @@ class MessageLookup extends MessageLookupByLibrary {
         "api_info": MessageLookupByLibrary.simpleMessage("API information: "),
         "birth_year": MessageLookupByLibrary.simpleMessage("Birth year: "),
         "created": MessageLookupByLibrary.simpleMessage("Created year: "),
+        "detail_view_page_title":
+            MessageLookupByLibrary.simpleMessage("More information"),
+        "director": MessageLookupByLibrary.simpleMessage("Director: "),
+        "episode_id": MessageLookupByLibrary.simpleMessage("Episode ID: "),
         "eye_color": MessageLookupByLibrary.simpleMessage("Eye color: "),
         "films": MessageLookupByLibrary.simpleMessage("Films: "),
+        "films_list_page_title": MessageLookupByLibrary.simpleMessage("Films"),
         "gender": MessageLookupByLibrary.simpleMessage("Gender: "),
         "hair_color": MessageLookupByLibrary.simpleMessage("Hair color: "),
         "height": MessageLookupByLibrary.simpleMessage("Height: "),
-        "home_page_title": MessageLookupByLibrary.simpleMessage("Characters"),
         "mass": MessageLookupByLibrary.simpleMessage("Mass: "),
-        "people_detail_view_page_title":
-            MessageLookupByLibrary.simpleMessage("More information"),
+        "opening_crawl":
+            MessageLookupByLibrary.simpleMessage("Opening crawl: "),
+        "people_list_page_title":
+            MessageLookupByLibrary.simpleMessage("Characters"),
+        "producer": MessageLookupByLibrary.simpleMessage("Producer: "),
+        "release_date": MessageLookupByLibrary.simpleMessage("Release date: "),
         "search_character":
-            MessageLookupByLibrary.simpleMessage("Seacrh character: "),
+            MessageLookupByLibrary.simpleMessage("Search character: "),
+        "search_film": MessageLookupByLibrary.simpleMessage("Search film: "),
         "skin_color": MessageLookupByLibrary.simpleMessage("Skin color: "),
         "starships": MessageLookupByLibrary.simpleMessage("Starships: "),
+        "title": MessageLookupByLibrary.simpleMessage("Title: "),
         "url": MessageLookupByLibrary.simpleMessage("Url: "),
         "vehicles": MessageLookupByLibrary.simpleMessage("Vehicles: ")
       };
