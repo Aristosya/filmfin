@@ -22,7 +22,9 @@ class PeopleListCubit extends Cubit<PeopleState> {
 
     var oldPerson = <PeopleEntity>[];
     if (currentState is PeopleLoaded) {
-      oldPerson = currentState.peopleList;
+      if (page<10){
+        oldPerson = currentState.peopleList;
+      }
     }
 
     emit(PeopleLoading(oldPerson, isFirstFetch: page == 1));
@@ -33,6 +35,7 @@ class PeopleListCubit extends Cubit<PeopleState> {
             (error) => emit(PeopleError(message: _mapFailureToMessage(error))),
             (character) {
               if (page<10){page++;}
+              if (page==10){page=1;}
           final people = (state as PeopleLoading).oldPeopleList;
           people.addAll(character);
           // print('List length: ${people.length.toString()}');

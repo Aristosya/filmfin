@@ -1,6 +1,7 @@
 {
-  "home_page_title": "Characters",
-  "people_detail_view_page_title": "More information",
+  "people_list_page_title": "Characters",
+  "films_list_page_title": "Films",
+  "detail_view_page_title": "More information",
   "gender" : "Gender: ",
   "birth_year" : "Birth year: ",
   "height" : "Height: ",
@@ -14,6 +15,13 @@
   "starships" : "Starships: ",
   "url" : "Url: ",
   "api_info" : "API information: ",
-  "search_character" : "Seacrh character: ",
+  "search_character" : "Search character: ",
+  "title" : "Title: ",
+  "episode_id" : "Episode ID: ",
+  "opening_crawl" : "Opening crawl: ",
+  "release_date" : "Release date: ",
+  "director" : "Director: ",
+  "producer" : "Producer: ",
+  "search_film" : "Search film: ",
   "" : ""
 }
